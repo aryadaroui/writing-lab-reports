@@ -1,0 +1,339 @@
+\documentclass{bannerReport}
+
+\graphicspath{{Assets/}}
+\def\arraystretch{1.2}
+\definecolor{darkColor}{RGB}{100,90,75}		% umber
+\definecolor{lightColor}{RGB}{243,238,233}	% sand
+\setcounter{tocdepth}{2}
+\setlength\parindent{5pt}
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{8pt}
+\usepackage{gensymb}
+\usepackage{cite}
+\usepackage{array}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks, breaklinks,
+    linkcolor=darkColor,
+    filecolor=darkColor,      
+	urlcolor=darkColor,
+	citecolor=black
+}
+
+\title{Writing Lab Reports}
+\subtitle{A Guide on Content and Format}
+\info{Sep 2019 \\ v1.0}
+\author{ {\small prepared by} \\ Arya Daroui \\ Maryam Qudrat, Ph.D.}
+
+\begin{document} \sloppy
+	\titlepage{Assets/banner.pdf}
+	% \tableofcontents
+
+	\section{Introduction}
+		Laboratory experiments and reports are a core academic tool in STEM education. Experiments make the course content hands-on and exciting, allow students to verify the material firsthand, and teach the fundamental properties of the scientific method. Further, reports are practice for technical communication, and are an introduction to doing real scientific research. This document is designed to serve as a guide on how to write proper lab reports throughout your academic career and beyond. It will focus on both the content of a report and its format.
+
+	\section{Content}
+		Lab reports have a relative standard set of sections and corresponding content. Although different courses may combine or omit some of these sections, the following will cover most of what students will encounter.
+
+		\subsection{Sections}
+			\subsubsection{Cover page}
+				The cover page should be simple, and should only show what needs to be shown:
+				\begin{itemize}
+					\item Title of lab
+					\item Subtitle of lab
+					\item Your name
+					\item The date
+					\item Class title
+					\item Instructor's name
+				\end{itemize}
+				Fancy graphics should generally be avoided, but things like the school’s logo or seal are generally acceptable.
+
+			\subsubsection{Abstract}
+				The abstract is a very brief summary of the report. It contains the report’s results and what they mean. It should read like a movie trailer to the full report, except it reveals the spoilers.
+
+			\subsubsection{Introduction}
+				The introduction is where the report should truly begin, introducing the reader to what the experiment and report is about:
+				\begin{itemize}
+					\item Context and background of topic
+					\item Why the topic is significant
+					\item Goals of the lab, hypothesis, or an expected outcome
+				\end{itemize}
+
+			\subsubsection{Theory}
+				This is where the theoretical model of the topic and experiment is introduced and explained. It should show:
+				\begin{itemize}
+					\item Introduction and derivation of equations or other key relationships, mathematical or not
+					\item Diagram of model
+					\item Variable list (may be moved to appendix)	
+				\end{itemize}
+
+			\subsubsection{Method}
+				This is the cookbook recipe to the experiment. It contains a list of instruments and tools used, and a procedure for how the experiment was performed. The procedure should be detailed enough that a peer would be able to recreate the experiment.
+
+			\subsubsection{Data}
+				Here, simply list the raw data collected. No calculations should be done yet except for simple conversions like Celsius to Fahrenheit. The data should be listed in a table or plot.
+
+			\subsubsection{Analysis}
+				Now, perform calculations on the data with the equations given in the Theory section. Calculations should be written out with the variable equation, then with the input values plugged in, and finally the output value, as shown below.
+				\begin{dent}
+					Plugging into equation (5),
+					\begin{equation*}
+						\begin{aligned}
+							E &= hf \\
+							&= (6.62607 \times 10^{-34} {\text{ J s}})(512.75 \text{ THz})\\
+							&= 321.02 \text{ zJ}
+						\end{aligned}
+					\end{equation*}
+				\end{dent}
+				If there are multiple of the same type of calculation, it only needs to be written out once. Similarly, the multiple outputs should be listed in a table or plot. Avoid discussing the results until the discussion section.
+
+			\subsubsection{Discussion}
+				This is where the outputs from the analysis are interpreted for further meaning. It should explain the following:
+				\begin{itemize}
+				\item What the output values or plots mean
+				\item Whether or not they support the stated goals, hypothesis or expected outcome
+				\item Possible sources of error
+				\end{itemize}
+
+			\subsubsection{Conclusion}
+				The conclusion is a bit like the abstract, introduction, and discussion sections squeezed together. It is a brief summary of the report covering what was found, what it means, and why it is important. It should confirm if the original goals, hypothesis, or expected outcomes were realized or supported.
+
+			\subsubsection{References}
+				Any and all resources used to perform the lab or write the report should be listed here. The format (e.g. APA, MLA, IEEE, etc.) will depend upon the instructor.
+
+			\subsubsection{Appendix}
+				The appendix contains information that is important, but would be distracting to the reader if it were in the main body of the report. Common examples are:
+				\begin{itemize}
+					\item Large tables, plots, or figures
+					\item Definitions of abbreviations
+					\item Precise specifications of equipment
+					\item List of variables, what they represent, and their units
+					\item Expanding upon simplified statements
+				\end{itemize}
+				Each entry in the appendix should have its own subsection.
+
+		\subsection{Composition}
+			\subsubsection{Percent difference vs. percent error}
+				Some labs require a comparison between values in their analysis to estimate experimental error; this is normally done using percent difference or percent error.
+				Percent error compares two an experimental value against a theoretical value to see how far off the experimental is.
+				$$
+					\mathrm{\% Error} = \bigg| \frac{ \mathrm{theoretical} - \mathrm{experimental} }{\mathrm{theoretical}} \bigg| \times 100 \%
+				$$
+				Percent difference compares two experimental values (ideally obtained through two different methods) against one another. The closer the values are to each other, the more likely it is that there is low experimental error.
+				$$
+					\mathrm{\% Difference} = \bigg| \frac{ \mathrm{experimental}_1 - \mathrm{experimental}_2}{ \frac{1}{2}(\mathrm{experimental}_1 + \mathrm{experimental}_2)} \bigg| \times 100 \%
+				$$
+
+				\newpage
+
+			\subsubsection{Present vs. past tense}
+				Use past tense for what was true at the time of the experiment, but is no longer true.
+				\vspace{-.1cm}
+				\begin{dent}
+					The speed of the projectile was $343 \text{ }{\text{m} \over \text{s}}$
+				\end{dent}
+				Use present tense for things that are still true, especially natural phenomena.
+				\vspace{-.1cm}
+				\begin{dent}
+					The speed of light is $2.99 792 \times 10^8 \text{ }{\text{m} \over \text{s}}$
+				\end{dent}
+		
+		\section{Format}
+			Half of the report is in its format. The ultimate goal is to maintain clarity and understanding for the ready. So even if the words themselves make sense, if the format of the report makes it difficult to follow your reasoning, the goal has been failed.
+
+			\subsection{Math}
+				Lab reports being technical in nature, mathematical typesetting is often necessary, and often done incorrectly. There are some general rules in how mathematics should be typeset, some followed more or less closely than others. These standards can be read further in \cite{tug} and \cite{iupac}.
+				\newline
+				\newline
+
+				\noindent Variables must be italic, normal text is roman.
+				\vspace{-.1cm}
+				\begin{dent}
+					The horizontal displacement $x$ increased over time.
+				\end{dent}
+				~\\
+				Units are roman. Do not make the common mistake of italicizing the `\textmu'  in the `micro-' prefix.
+				\vspace{-.1cm}
+				\begin{dent}
+					Grade 2 filter paper has a pore size of $8 \text{ \textmu m}$
+				\end{dent}
+				~\\
+				Special functions are roman.
+				\vspace{-.1cm}
+				\begin{dent}
+					\begin{equation*}
+						f(t) = \sin(\omega t)
+					\end{equation*}
+				\end{dent}
+				~\\
+				Numerical (not physical) constants  are roman, including $\mathrm{e}$, the imaginary unit $\mathrm{i}$, and the differential operator $\mathrm{d}$. This rule is sometimes ignored even in major academic publications.
+				\vspace{-.1cm}
+				\begin{dent}
+					The most beautiful equation in mathematics is
+					\begin{equation*}
+						\mathrm{e}^{\mathrm{i} \uppi} + 1  = 0
+					\end{equation*}
+				\end{dent}
+				~\\
+				\newpage
+				\noindent Multiletter variables are roman. This prevents it looking like the individual letters are being multiplied. Similarly, subscript symbols are also roman unless they are referring to a specific, single letter variable.
+				\vspace{-.1cm}
+				\begin{dent}
+					\begin{equation*}
+						\mathrm{SQNR} = \dfrac{P_\mathrm{signal}}{P_\mathrm{noise}} = \dfrac{E[x_s^2]}{E[x_p^2]}
+					\end{equation*}
+				\end{dent}
+				~\\
+				\noindent Vectors are lowercase and matrices are uppercase, but both are bolded. Vectors may be written with an arrow hat instead, but be consistent within the same document.
+				\vspace{-.1cm}
+				\begin{dent}
+					The horizontal rows of matrix $\boldsymbol{X}$ are composed of the vectors $\boldsymbol{x}_n$.
+
+					\noindent\makebox[\linewidth]{\rule{8cm}{0.4pt}}
+
+					The roll, pitch, and yaw of the aircraft are stored as
+					\begin{equation*}
+						\vec{p} = [\phi, \; \theta, \; \psi]
+					\end{equation*}
+				\end{dent}
+				~\\
+				Important equations that are referred to again later in the document should be numbered at the right of the column or margin.
+				\vspace{-.4cm}
+				\begin{dent}
+					Thus, we obtain the ideal gas law				
+					\begin{equation}
+						PV = nRT
+					\end{equation}
+					Using (1), we can find teh pressure within the cylinder.
+				\end{dent}
+				~\\
+				Equations should be centered, and have aligned equals signs where applicable.
+				\vspace{-.1cm}
+				\begin{dent}
+					The energy of a photon can equivalently be written in terms of its frequency or its wavelength,
+					\begin{align*}
+						E &= hf \\
+						&= \frac{h}\lambda
+					\end{align*}
+				\end{dent}
+				~\\
+				Values should be in scientific notation. Engineers may opt to use engineering (base 1000) notation where applicable.
+				\vspace{-.1cm}
+				\begin{dent}
+					The most beautiful physical constant is Planck’s constant,
+					$$
+						h = 6.62607 \times 10^{-34} \text{ J s}
+					$$
+					The wavelength of the laser was $\lambda = 700 \text{ nm}$
+				\end{dent}
+
+			\subsection{Embedding tables and figures}
+				% Tables should be enumerated and have a descriptive caption for the data at the top of the table. Table headers should describe their values, units, and corresponding variables, if applicable. Values should be aligned by decimal value so that numbers in the same column can be easily compared. The table must be explicitly referred to in the body of your text. An example is shown in Table 1.
+				Tables and figures are important ways to deliver quick information to your reader. They are the first places the reader's eyes go if reading quickly, so clarity and modularity are critical. It should be possible to read and comprehend the table or figure by itself without having to refer back to the report.
+				\newpage
+				Accordingly, tables and figures must adhere to the following:
+				\begin{itemize}
+					\item Enumerated title
+					\item Descriptive caption providing context beyond just what is shown
+					\item Headers and axes should describe values, their units, and their corresponding variables, if applicable
+					\item Values should be aligned by decimal value so that numbers in the same column can be easily compared
+					\item The title should explicitly be referred to in the body of the text
+				\end{itemize}
+				Examples displaying these features are shown below in Table 1 and Figure 1, respectively.
+
+				\begin{tableLight}{Displacement of water level when capsized vessel is fully submerged. (example)}{c c}
+					\textbf{Water displacement}, $h$ [m] & \textbf{Time}, $t$ [s] \\
+					\hline
+					0.00	&	0.00	\\
+					0.74	&	1.00	\\
+					1.81	&	2.00	\\
+					3.29	&	3.00	\\	
+					4.17	&	4.00	\\			
+					5.05	&	5.00	\\			
+					% 6.38	&	6.00	\\		
+					% 7.84	&	7.00	\\			
+					% 8.78	&	8.00	\\			
+					% 9.45	&	9.00	\\			
+				\end{tableLight}
+
+				\fig{plot.pdf}{Horizontal distance vs. time plot of thrown paper airplane. (example)}
+
+				\newpage
+
+				\noindent If a figure is not a plot or chart, then the rules regarding values and axes do not apply, but the caption should be more descriptive in the information the reader is meant to glean from the figure. An example of this is shown in Figure 2.
+
+				\fig{owl.jpg}{The Boreal Owl (\textit{Aegolius funereus}) is nocturnal, but it may hunt during the day due to the short summer nights in the upper latitudes of its range. Photograph courtesy of \href{https://commons.wikimedia.org/wiki/File:Aegolius-funereus-001.jpg}{
+				Bart ``Rex'' Slingerland} from \cite{owl}. (example)}
+
+		\newpage
+
+		\bibliographystyle{ieeetran}
+		\bibliography{references}
+
+		% \newpage
+
+		\section*{Appendix}
+			% \subsection*{Definitions}
+				A list of abbreviations used in this document is shown below in Table 2 with their corresponding meanings.
+				\begin{tableLight}{Definitions of abbreviations}{>{\centering\arraybackslash}m{0.8in} m{2.2in}}
+					\multicolumn{1}{c}{\textbf{Abbreviation}}& \multicolumn{1}{c}{\textbf{Meaning}}\\
+					\hline
+					STEM	&                   Science, technology, mathematics, and engineering	\\
+					APA		&	American Psychological Association; a popular document format \\
+					MLA		&	Modern Language Association; a popular document format \\
+					IEEE	&	Institute of Electrical and Electronics Engineers; a popular document format \\
+				\end{tableLight}
+
+
+
+
+% 		\section{Appendix}
+% 			\subsection{Definitions}
+
+% 			\subsection{\LaTeX \, Examples}
+
+% 				\begin{equation*}
+% 					\delta = 8 \text{ \textmu m}
+% 				\end{equation*}
+% 				\vspace{-.6cm}
+% 				\begin{code}
+% \delta = 8 \text{ \textmu m}
+% 				\end{code}
+
+% 				\begin{equation*}
+% 					f(t) = \sin(\omega t)
+% 				\end{equation*}
+% 				\vspace{-.6cm}
+% 				\begin{code}
+% f(t) = \sin(\omega t)
+% 				\end{code}
+			
+% 				\begin{equation*}
+% 					g(x) = \operatorname{floor}(x)
+% 				\end{equation*}
+% 				\vspace{-.6cm}
+% 				\begin{code}
+% g(x) = \operatorname{floor}(x)
+% 				\end{code}
+
+% 				\begin{equation*}
+% 					\boldsymbol{X}
+% 				\end{equation*}
+% 				\vspace{-.6cm}
+% 				\begin{code}
+% \boldsymbol{X}
+% 				\end{code}	
+				
+% 				\begin{equation*}
+% 					i = 0.707 \text{ mA} + 0.707 \mathrm{i}
+% 				\end{equation*}
+% 				\vspace{-6cm}
+% 				\begin{code}
+% i = 0.707 \text{ mA} + 0.707 \mathrm{i}
+% 				\end{code}		
+
+				
+
+
+
+\end{document}
